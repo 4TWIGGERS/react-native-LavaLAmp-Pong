@@ -103,7 +103,6 @@ export default function Animation() {
   useEffect(() => {
     if (!isLoaded.current) {
       animateProfilesOrBubbles.map((item) => {
-        console.log("item", item);
         return (
           (item.translateY.value = withBouncing(
             VELOCITY,
